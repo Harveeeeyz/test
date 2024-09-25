@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GroupManagerTab</class>
+ <widget class="QWidget" name="GroupManagerTab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>群组管理器</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="joinGroupTab">
+      <attribute name="title">
+       <string>加群</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="accountLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>账号列表</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="accountTableWidget"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="groupLayout">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>群组列表</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="groupTableWidget"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="joinButton">
+         <property name="text">
+          <string>加入选中群组</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="sendMessageTab">
+      <attribute name="title">
+       <string>群发消息</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="messageLayout">
+         <item>
+          <widget class="QTextEdit" name="messageInput"/>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="buttonLayout">
+           <item>
+            <widget class="QPushButton" name="addMessageButton">
+             <property name="text">
+              <string>添加消息</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="uploadFileButton">
+             <property name="text">
+              <string>上传文件</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="deleteMessageButton">
+             <property name="text">
+              <string>删除消息</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QListWidget" name="messageList"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="sendGroupLayout">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>群组列表</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="sendGroupTableWidget"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="sendButton">
+         <property name="text">
+          <string>发送消息</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
